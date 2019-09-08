@@ -1,14 +1,17 @@
 Please answer the below core-java Questions:
 
 What is programing language?
-A.
+A.  a formal language, which comprises a set of instructions that produce various kinds of output.
 
 
 
 
 What jdk contains or composed of and define each components?
-A.
-
+A.Contain JRE , Comelier, Debugger,Applet Demos
+JRE:is a set of software tools for development of Java applications.
+Comepiler:is a special program that processes statements written in a particular programming language and turns them into machine language or "code" that a computer's processor uses.
+Debugger: s a simple command-line debugger for Java classes.
+Applet Demos: is a Java program that can be embedded into a web page. It runs inside the web browser and works at client side.
 
 
 
@@ -19,13 +22,13 @@ A. Integrated Development Environment
 
 
 What are the IDEs available in the market to support java?
-A.
+A. IntellijIDEA, Eclipse,NetBeans,Visual Studios.
 
 
 
 Explain the entire java life cycle.
 what is class? Is like an blueprint which object is created from.
-What is object?
+What is object? A basic unit of Object Oriented Programming and represents the real life entities.
 What is the entry point of an application?
 Why main is static?
 Which class is the superclass of all classes?
@@ -33,7 +36,11 @@ What is difference between path and classpath variables?
 What is the difference between an Interface and Abstract class?
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
 what is Access Specifier?
-What is OOP ? Define each feature of java OOP.
+What is OOP ? Object Oriented Programming, Define each feature of java OOP.
+Encapsulation:the practice of keeping fields within a class private, then providing access to them via public methods.
+Inheritance: lets programmers create new classes that share some of the attributes of existing classes.
+Polymorphism : Has many forms and lets programmers use the same word to mean different things in different contexts.
+Abstract: using simple things to represent complexity.
 What is Java Package and which package is imported by default?
 What is API? Name list of API that you have used so far.
 Does java support multiple inheritance, explain why or why not?
