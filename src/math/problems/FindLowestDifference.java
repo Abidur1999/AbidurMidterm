@@ -31,8 +31,8 @@ public class FindLowestDifference {
     public static void main(String args[]) {
         int a[] = {30, 12, 5, 9, 2, 20, 33, 1};
         int b[] = {18, 25, 41, 47, 17, 36, 14, 19};
-//System.out.println("Smallest: "+getSmallest(a,8));
-//System.out.println("Smallest: "+getSmallest(b,8));
+System.out.println("Smallest: "+getSmallest(a,8));
+System.out.println("Smallest: "+getSmallest(b,8));
         System.out.println("The smallest number from the two array number is: " + Math.min(getSmallest(a, 8), getSmallest(b, 8)));
 
 
