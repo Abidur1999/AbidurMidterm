@@ -28,48 +28,48 @@ A. IntellijIDEA, Eclipse,NetBeans,Visual Studios.
 
 Explain the entire java life cycle.
 what is class? Is like an blueprint which object is created from.
-What is object? A basic unit of Object Oriented Programming and represents the real life entities.
+What is object? A basic unit of Object Oriented Programming and represents the real life entities
 What is the entry point of an application?
-Why main is static?
-Which class is the superclass of all classes?
-What is difference between path and classpath variables?
-What is the difference between an Interface and Abstract class?
+Why main is static? It allows main() to be called without having to instantiate a particular instance of the class.
+Which class is the superclass of all classes? Object is the superclass of all.
+What is difference between path and classpath variables?  Classpath variable is used to set the path for java classes and path variable is used to set the path for all Java software tools like javac.exe, java.exe, javadoc.exe.
+What is the difference between an Interface and Abstract class? the implementation of both is different but contains similar words.
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
-what is Access Specifier?
-What is OOP ? Object Oriented Programming, Define each feature of java OOP.
-Encapsulation:the practice of keeping fields within a class private, then providing access to them via public methods.
-Inheritance: lets programmers create new classes that share some of the attributes of existing classes.
-Polymorphism : Has many forms and lets programmers use the same word to mean different things in different contexts.
-Abstract: using simple things to represent complexity.
-What is Java Package and which package is imported by default?
-What is API? Name list of API that you have used so far.
-Does java support multiple inheritance, explain why or why not?
-What is method overloading and when it happens?
-Explain exceptions in java and how to handle it.
-What is static keyword in java? How it has been used in variables and methods ?
-What is final and how it has been used variables and methods?
-What is final, finally and finalize?
-What is a constructor ?
-Can we have multiple constructors in a class?
+what is Access Specifier? its to Control the visibility of classes,variables,methods
+What is OOP ? Object Oriented Programming, Define each feature of java OOP
+Encapsulation:the practice of keeping fields within a class private, then providing access to them via public method
+Inheritance: lets programmers create new classes that share some of the attributes of existing classes
+Polymorphism : Has many forms and lets programmers use the same word to mean different things in different contexts
+Abstract: using simple things to represent complexity
+What is Java Package and which package is imported by default? java.lang gets imported and Java package will organizes Java classes into namespaces, providing a unique namespace for each type it contains.
+What is API? Name list of API that you have used so far. API is a communication protocol and  We used java virtual machine, JVM
+Does java support multiple inheritance, explain why or why not? No it doesn't because it creates confusion and complexity.
+What is method overloading and when it happens? its a class to have more than one method having the same name, if their argument lists are different.
+Explain exceptions in java and how to handle it. : an unwanted or unexpected event, which occurs during the execution of a program i.e at run time, that disrupts the normal flow of the program’s instructions. You can handle it by using try and Catch.
+What is static keyword in java? How it has been used in variables and methods ? static is a non-access modifier ,indicates that the particular member belongs to a type itself, rather than to an instance of that type.
+What is final and how it has been used variables and methods? Is an non-access modifier applicable only to a variable, a method or a class which define an entity that can only be assigned once. Once a final variable has been assigned, it always contains the same value.
+What is final, finally and finalize? Final : Is an non-access modifier applicable only to a variable, Finally:is a block that is used to execute important code such as closing connection, Finalize: used to perform clean up processing just before object is garbage collected.
+What is a constructor ? An constructor it resembles an instance method in java but it's not a method as it doesn't have a return type
+Can we have multiple constructors in a class? yes if parameters not same
 If we don't have a constructor declared, what is called during the object creation?
-What is "this" keyword in java ?
-What is "super" keyword in java? How many possible way can you use?
-What is JVM stand for ?
-Is JVM platform independent?
-What version of java are you using?
-What is JAR stand for ?
-What is the difference between JDK and JVM?
-What is the difference between JVM and JRE?
-What is compile time and run time?
-What is heap?
-How java manage it's memory?
-What is the difference between String, StringBuffer and StringBuilder?
-What is Singleton class?
-What is Serialization and Deserialization?
-when to use transient variable in java?
-Difference between while and do..while loop?
-What is Enum?
-What is Iterator?
+What is "this" keyword in java ? It refers to the current object.
+What is "super" keyword in java? How many possible way can you use? Well super is used to refer immediate parent class instance variable. We can use super keyword to access the data member or field of parent class.
+What is JVM stand for ? Java Virtual Machine
+Is JVM platform independent? yes
+What version of java are you using? java 8
+What is JAR stand for ? Java ARchive
+What is the difference between JDK and JVM? JDK is for development purpose where JVM provides platform independence.
+What is the difference between JVM and JRE? JVM provides platform independence and JRE is for running the java programs.
+What is compile time and run time? Compile-time is the instance where the code you entered is converted to executable while Run-time is the instance where the executable is running
+What is heap?  is the runtime data area from which memory for all class instances and arrays is allocated. The heap is created on virtual machine start-up.
+How java manage it's memory? it automatically stores in management system (known as a garbage collector); objects are never explicitly dislocated.
+What is the difference between String, StringBuffer and StringBuilder? String is immutable whereas StringBuffer and StringBuider are mutable classes. StringBuffer is thread safe and synchronized whereas StringBuilder is not.
+What is Singleton class? Is simply a class that is instantiated exactly once in the Java Virtual Machine. It is used to provide global point of access to the object.
+What is Serialization and Deserialization? is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory
+when to use transient variable in java? when  we don't want to save value of a particular variable in a file, then we use transient
+What is Enum? A special Java type used to define collections of constants.
+Difference between while and do..while loop? While loop executes the code block only if the condition is True. In Java Do While loop, condition is tested at the end of the loop so Do While executes the statements in the code block at least once even if the condition Fails.
+What is Iterator?  A collection framework. It allows us to traverse the collection, access the data element and remove the data elements of the collection.
 Which one will take more memory, an int or Integer?
 Why is String Immutable in Java?
 What is constructor chaining in Java?

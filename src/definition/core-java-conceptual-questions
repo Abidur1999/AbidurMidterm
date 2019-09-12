@@ -35,7 +35,7 @@ Which class is the superclass of all classes? Object is the superclass of all.
 What is difference between path and classpath variables?  Classpath variable is used to set the path for java classes and path variable is used to set the path for all Java software tools like javac.exe, java.exe, javadoc.exe.
 What is the difference between an Interface and Abstract class? the implementation of both is different but contains similar words.
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
-what is Access Specifier? Control the visibility of classes,variables,methods
+what is Access Specifier? its to Control the visibility of classes,variables,methods
 What is OOP ? Object Oriented Programming, Define each feature of java OOP
 Encapsulation:the practice of keeping fields within a class private, then providing access to them via public method
 Inheritance: lets programmers create new classes that share some of the attributes of existing classes
@@ -52,10 +52,10 @@ What is final, finally and finalize? Final : Is an non-access modifier applicabl
 What is a constructor ? An constructor it resembles an instance method in java but it's not a method as it doesn't have a return type
 Can we have multiple constructors in a class? yes if parameters not same
 If we don't have a constructor declared, what is called during the object creation?
-What is "this" keyword in java ?
-What is "super" keyword in java? How many possible way can you use?
+What is "this" keyword in java ? It refers to the current object.
+What is "super" keyword in java? How many possible way can you use? Well super is used to refer immediate parent class instance variable. We can use super keyword to access the data member or field of parent class.
 What is JVM stand for ? Java Virtual Machine
-Is JVM platform independent?
+Is JVM platform independent? yes
 What version of java are you using? java 8
 What is JAR stand for ? Java ARchive
 What is the difference between JDK and JVM? JDK is for development purpose where JVM provides platform independence.
@@ -66,7 +66,7 @@ How java manage it's memory? it automatically stores in management system (known
 What is the difference between String, StringBuffer and StringBuilder? String is immutable whereas StringBuffer and StringBuider are mutable classes. StringBuffer is thread safe and synchronized whereas StringBuilder is not.
 What is Singleton class? Is simply a class that is instantiated exactly once in the Java Virtual Machine. It is used to provide global point of access to the object.
 What is Serialization and Deserialization? is a mechanism of converting the state of an object into a byte stream. Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory
-when to use transient variable in java?
+when to use transient variable in java? when  we don't want to save value of a particular variable in a file, then we use transient
 What is Enum? A special Java type used to define collections of constants.
 Difference between while and do..while loop? While loop executes the code block only if the condition is True. In Java Do While loop, condition is tested at the end of the loop so Do While executes the statements in the code block at least once even if the condition Fails.
 What is Iterator?  A collection framework. It allows us to traverse the collection, access the data element and remove the data elements of the collection.

@@ -22,9 +22,8 @@ array.add("Florida");
 		System.out.println("Added All" + array);
 
 		System.out.println("Gettting state name using While loop with Iterator");
-		Iterator itr = array.iterator();
-		while (itr.hasNext()){
-			System.out.println(itr.next());
+		for (String s : array) {
+			System.out.println(s);
 		}
 array.remove("NJ");
 		System.out.println("Statename" + array);

@@ -72,7 +72,8 @@ public abstract class EmployeeInfo implements Employee {
 
 	@Override
 	public void assignDepartment() {
-		System.out.println("department is");
+		//System.out.println("department is :");
+
 	}
 
 	@Override
@@ -93,7 +94,7 @@ public abstract class EmployeeInfo implements Employee {
 
 	@Override
 	public void vacationDay() {
-		System.out.println("days off");
+		System.out.println('A');
 	}
 
 
@@ -222,3 +223,4 @@ public abstract class EmployeeInfo implements Employee {
 		}
 	}
 }
+
