@@ -24,12 +24,12 @@ public class UseQueue {
 		System.out.println("Elements in queue are: " + queue);
 
 		queue.remove();
-		System.out.println("Elements in queue after using remove: " + queue);
+		System.out.println(" The Elements in queue after using remove: " + queue);
 
-		System.out.println("The head element of queue is: "+ queue.peek());
+		System.out.println("The top element of queue is: "+ queue.peek());
 
 		queue.poll();
-		System.out.println("Elements in queue after using poll: " + queue);
+		System.out.println(" The Elements in queue after using the  poll: " + queue);
 
 		System.out.print("\nThe Queue items using For Each: ");
 		for(String item: queue)
