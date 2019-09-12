@@ -12,27 +12,37 @@ public class UseArrayList {
 		 * Store all the sorted data into one of the databases.
 		 *
 		 */
-ArrayList<String> array = new ArrayList<>();
+		ArrayList<Integer> ArrayList = new ArrayList<>(2);
 
-array.add("Canada");
-array.add("NJ");
-array.add("Washington");
-array.add("Ohio");
-array.add("Florida");
-		System.out.println("Added All" + array);
+		ArrayList.add(10);
+		ArrayList.add(20);
+		ArrayList.add(30);
+		ArrayList.add(40);
+		ArrayList.add(95);
 
-		System.out.println("Gettting state name using While loop with Iterator");
-		for (String s : array) {
-			System.out.println(s);
-		}
-array.remove("NJ");
-		System.out.println("Statename" + array);
+		// Retrieving data using For Each
 
-		System.out.println("");
-		System.out.println("Gettting state name using While loop with Iterator");
+		System.out.println("The ArrayList items by using For Each:");
+		for(Integer item: ArrayList)
+			System.out.println(item);
 
-		for (String st : array){
-			System.out.println(st);
-		}
+		// Retrieving data using iterator
+
+		System.out.println("The ArrayList items by using iterator interface:");
+		Iterator iterator = ArrayList.iterator();
+
+		while(iterator.hasNext())
+			System.out.println(iterator.next());
+
+		for (Integer integer : ArrayList) System.out.println(integer);
+
+		ArrayList.remove(Integer.valueOf(40));
+		System.out.println("Removed 40. Now the ArrayList content is:");
+		for(Integer item: ArrayList)
+			System.out.println(item);
+
+		System.out.println("Retrieving element at index 2: " + ArrayList.get(2));
 	}
+
 }
+
