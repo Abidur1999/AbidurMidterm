@@ -20,7 +20,9 @@ public class Numbers {
 	 *
 	 */
 
-	public static void main(String[] args,) throws Exception {
+	public static void main(String[] args)  throws Exception{
+
+	} {
 
 		int[]  num = new int[100000];
 		storeRandomNumbers(num);
@@ -31,8 +33,18 @@ public class Numbers {
 		long selectionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
 		connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
-		List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
-		printValue(numbers);
+		List<String> numbers = null;
+		try {
+			numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		assert numbers != null;
+		try {
+			printValue(numbers);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		int n = num.length;
 		randomize(num, n);
 
