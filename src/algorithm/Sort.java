@@ -7,8 +7,6 @@ import java.util.List;
 public class Sort {
 
     long executionTime = 0;
-    private int[] array;
-    private int noOfBucket;
     /*
 	 * Please implement all the sorting algorithm. Feel free to add helper methods.
 	 * Store all the sorted data into one of the databases.
@@ -167,9 +165,7 @@ public class Sort {
     }
 
 
-    public void bucketSort(int [] array, int noOfBucket){
-        this.array = array;
-        this.noOfBucket = noOfBucket;
+    public int[] bucketSort(int [] array, int noOfBucket){
         List [] buckets = new List[noOfBucket];
         for (int i = 0; i < noOfBucket; i++) {
             buckets[i] = new LinkedList();
@@ -184,11 +180,11 @@ public class Sort {
         }
         int i = 0;
         // Merge buckets to get sorted array
-        for(List bucket : buckets){
-            for(Object num : bucket){
+        for(List bucket : buckets)
+            for (Object num : bucket) {
                 array[i++] = (int) num;
             }
-        }
+        return array;
     }
 
     public static int hash(int num){

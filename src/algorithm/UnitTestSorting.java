@@ -1,6 +1,7 @@
 package algorithm;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class UnitTestSorting {
 
@@ -14,6 +15,8 @@ public class UnitTestSorting {
 
         Sort sort = new Sort();
         //apply unsorted array to selectionSort.
+
+
         sort.selectionSort(unSortedArray);
         //verify if the unsorted array is sorted by the selection sort algorithm.
         try {
@@ -29,4 +32,7 @@ public class UnitTestSorting {
 
 
     }
-}
+
+
+    }
+

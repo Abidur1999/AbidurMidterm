@@ -37,6 +37,10 @@ public class FindMissingNumber {
         }
 
     }
+
+    public static int FindMissing(int... array2) {
+        return 0;
+    }
 }
 
 

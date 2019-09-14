@@ -1,6 +1,5 @@
 package algorithm;
 
-import com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar;
 import databases.ConnectToSqlDB;
 
 import java.util.List;
