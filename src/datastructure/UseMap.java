@@ -13,7 +13,7 @@ public class UseMap {
 		 * Use any databases[MongoDB, Oracle, MySql] to store data and retrieve data.
 		 */
 		Map<String, List<String>> palindromes = new HashMap<>();
-		palindromes.put("a", Arrays.asList("A nut for a jar of tuna", "Avid diva"));
+		palindromes.put("a", Arrays.asList("Life with no limits", "Wise words"));
 		palindromes.put("b", Arrays.asList("Borrow or rob", "Bombard a drab mob"));
 		palindromes.put("c", Arrays.asList("civic", "10 amendments"));
 		palindromes.put("d", Arrays.asList("desaturated", "Did Hannah see bees? Hannah did"));
