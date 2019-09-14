@@ -1,5 +1,6 @@
 package algorithm;
 
+import com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar;
 import databases.ConnectToSqlDB;
 
 import java.util.List;
@@ -48,20 +49,13 @@ public class Numbers {
 
 		randomize(num, n);
 		/* Merge Sort: */
-		algo = new Sort();
-		num = new int[0];
-
-		int mid = 0;
-		final var mergeSort = algo.mergeSort(num, array.length - mid);
+		algo.mergeSort(num, num.length);
 		long mergeSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of " + num.length + " numbers in Merge Sort take: " + mergeSortExecutionTime + " milli sec");
-		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-		connectToSqlDB.insertDataFromArrayToSqlTable(num, "merge_sort", "SortingNumbers");
-		List<String> numbers5 = connectToSqlDB.readDataBase("merge_sort", "SortingNumbers");
-		printValue(numbers5);
-		int o = num.length;
-		randomize(num, o);
-       //Quick Sort
+		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + mergeSortExecutionTime + " milli sec");
+
+		randomize (num, n);
+
+		//Quick Sort
 		algo.quickSort(num, 0, num.length - 1);
 		long quickSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + quickSortExecutionTime + " milli sec");
