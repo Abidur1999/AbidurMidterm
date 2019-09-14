@@ -33,13 +33,13 @@ public class LowestNumber {
 		List<String> lowestValue = new ArrayList<String>();
 
 		try {
-			connectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_lowestNumber", "SortingNumber");
-			lowestValue = connectToSqlDB.readDataBase("tbl_lowestNumber", "SortingNumber");
+			connectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_lowestNumber", "column_lowestNumber");
+			lowestValue = connectToSqlDB.readDataBase("tbl_lowestNumber", "column_lowestNumber");
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		//System.out.println(" Data is reading from the Table (tbl_primenumber) and displaying to the console ");
+		//System.out.println(" Data is reading from the Table (tbl_lowestnumber) and displaying to the console ");
 		for(String st:lowestValue) {
 			System.out.println(st);
 
