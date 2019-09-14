@@ -20,69 +20,73 @@ public class Numbers {
 	 *
 	 */
 
-	public static void main(String[] args) throws Exception {
-		int [] num = new int[1000000];
+	public static void main(String[] args,) throws Exception {
+
+		int[]  num = new int[100000];
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		//Selection Sort
 		Sort algo = new Sort();
 		algo.selectionSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+		System.out.println("Total Execution Time of " + num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
 		connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
 		List<String> numbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
 		printValue(numbers);
 		int n = num.length;
-		randomize (num, n);
+		randomize(num, n);
+
 		//Insertion Sort
 		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
-
-		randomize (num, n);
 
 		//Bubble Sort
 		algo.bubbleSort(num);
 		long bubbleSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + bubbleSortExecutionTime + " milli sec");
 
-		randomize (num, n);
+		randomize(num, n);
+		/* Merge Sort: */
+		algo = new Sort();
+		num = new int[0];
 
-		//Merge Sort
-		algo.mergeSort(num, num.length);
+		int mid = 0;
+		final var mergeSort = algo.mergeSort(num, array.length - mid);
 		long mergeSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + mergeSortExecutionTime + " milli sec");
-
-		randomize (num, n);
-
-		//Quick Sort
+		System.out.println("Total Execution Time of " + num.length + " numbers in Merge Sort take: " + mergeSortExecutionTime + " milli sec");
+		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "merge_sort", "SortingNumbers");
+		List<String> numbers5 = connectToSqlDB.readDataBase("merge_sort", "SortingNumbers");
+		printValue(numbers5);
+		int o = num.length;
+		randomize(num, o);
+       //Quick Sort
 		algo.quickSort(num, 0, num.length - 1);
 		long quickSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + quickSortExecutionTime + " milli sec");
 
-		randomize (num, n);
+		randomize(num, n);
 
 		//Heap Sort
 		algo.heapSort(num);
 		long heapSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + heapSortExecutionTime + " milli sec");
 
-		randomize (num, n);
+		randomize(num, n);
 
 		//Bucket Sort
 		algo.bucketSort(num, 10);
 		long bucketSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + bubbleSortExecutionTime + " milli sec");
 
-		randomize (num, n);
+		randomize(num, n);
 
 		//Shell Sort
 		algo.shellSort(num);
 		long shellSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + shellSortExecutionTime + " milli sec");
-
 	}
-
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();
 		for(int i=0; i<num.length; i++){
@@ -102,9 +106,12 @@ public class Numbers {
 			arr[j] = temp;
 		}
 	}
-	public static void printValue(List<String> array){
+	private static void printValue(List<String> array) throws Exception {
 		for(String st:array){
 			System.out.println(st);
 		}
+
+
 	}
+
 }
