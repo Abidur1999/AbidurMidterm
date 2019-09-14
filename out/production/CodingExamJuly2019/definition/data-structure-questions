@@ -34,7 +34,12 @@ What are the different ways of copying an array into another array? This can be 
 What is difference between an array and a linked list? Arrays are index based data structure where each element associated with an index. On the other hand, Linked list relies on references where each node consists of the data and the references.
 What is DFS and BFS?  The breadth first search (BFS) and the depth first search (DFS) are the two algorithms used for traversing and searching a node in a graph. They can also be used to find out whether a node is reachable from a given node or not.
 What is Recursion? A method of solving a problem where the solution depends on solutions to smaller instances of the same problem.
-What are linear and non linear data Structures? 
+What are linear and non linear data Structures?  linear data structures are Arrays, Stack, Queue and Linked List.
+An arrays is a collection of data items having the same data types.
+All the data elements in non linear data structure can not be traversed in single run.
+Examples of non linear data structures are Trees and Graphs
+
+
 What is Big-(O)-notation? it describe the performance or complexity of an algorithm.
  Linear and Heap sort
 

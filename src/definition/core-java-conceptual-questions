@@ -76,17 +76,32 @@ What is constructor chaining in Java?
 The difference between Serial and Parallel Garbage Collector?
 What is JIT stands for?
 Explain Java Heap space and Garbage collection?
+Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application runs.
+When the heap becomes full, garbage is collected.
+
 Can you guarantee the garbage collection process?
-What is the difference between stack and heap in Java?
-What is reflection in java and why is it useful?
-what is multithreading in java?
-What is the use of synchronization in Java?
-What is Framework?
-What are the testing Framework available in java?
-Difference between jUnit and testNG?
+What is the difference between stack and heap in Java?  stack memory is used to store local variables and function
+call while heap memory is used to store objects in Java.
+What is reflection in java and why is it useful? An API that is used to examine or modify the behaviour of methods, classes and interfaces at runtime.
+
+what is multithreading in java?  a process of executing multiple threads simultaneously.
+
+What is the use of synchronization in Java?  Synchronization in Java guarantees that no two threads can execute a synchronized method which requires the same lock simultaneously or concurrently.
+What is Framework? its large bodies (usually many classes) of prewritten code to which you add your own code to solve a problem in a specific domain. You make use of a framework by calling its methods, inheritance, and supplying "callbacks",
+listeners, or other implementations of the Observer pattern
+
+What are the testing Framework available in java? JTest,The Grinder,TestNG,JUnit,JWalk.
+Difference between jUnit and testNG? testNG uses test groups, which can categorize tests according to features such as run times.
+ JUnit is designed to hone in on a unit of code, TestNG is meant for high-level testing
+
 What are the dependencies for this project?
-what is dependency injection in java?
+what is dependency injection in java? Its a technique whereby one object (or static method) supplies the dependencies of another object.
+In Java, before we can use methods of other classes
+
 What is static binding and dynamic binding?
+In Java occurs during compile time while dynamic binding occurs during runtime. private ,
+final and static methods and variables use static binding and are bonded by compiler while virtual methods are bonded during runtime based upon runtime object
+
 
 
 
