@@ -7,7 +7,9 @@ import java.util.List;
 public class Sort {
 
     long executionTime = 0;
-	/*
+    private int[] array;
+    private int noOfBucket;
+    /*
 	 * Please implement all the sorting algorithm. Feel free to add helper methods.
 	 * Store all the sorted data into one of the databases.
 	 */
@@ -118,17 +120,56 @@ public class Sort {
     void quickSort(int[] array, int start, int i) {
     }
     
-    public int [] heapSort(int [] array){
-        int [] list = array;
+    public int[] heapSort(int [] array){
         //implement here
-        
-        
+        for (int i = array.length / 2 - 1; i >= 0; i--)
+            heapify(array, array.length, i);
 
-        return list;
+
+        for (int i=array.length-1; i>=0; i--)
+        {
+
+            int temp = array[0];
+            array[0] = array[i];
+            array[i] = temp;
+
+
+            heapify(array, i, 0);
+        }
+        return array;
+    }
+
+    void heapify(int arr[], int n, int i)
+    {
+        int largest = i;
+        int l = 2*i + 1;
+        int r = 2*i + 2;
+
+
+        if (l < n && arr[l] > arr[largest])
+            largest = l;
+
+
+        if (r < n && arr[r] > arr[largest])
+            largest = r;
+
+
+        if (largest != i)
+        {
+            int swap = arr[i];
+            arr[i] = arr[largest];
+            arr[largest] = swap;
+
+            heapify(arr, n, largest);
+        }
+
+
     }
 
 
-    public int [] bucketSort(int [] array, int noOfBucket){
+    public void bucketSort(int [] array, int noOfBucket){
+        this.array = array;
+        this.noOfBucket = noOfBucket;
         List [] buckets = new List[noOfBucket];
         for (int i = 0; i < noOfBucket; i++) {
             buckets[i] = new LinkedList();
@@ -148,7 +189,6 @@ public class Sort {
                 array[i++] = (int) num;
             }
         }
-        return array;
     }
 
     public static int hash(int num){
